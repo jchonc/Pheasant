@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  pheasant.forms:
+    image: ${DOCKER_REGISTRY-}pheasantforms
+    build:
+      context: .
+      dockerfile: Pheasant.Forms/Dockerfile

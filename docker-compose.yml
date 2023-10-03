@@ -5,4 +5,4 @@ services:
     image: ${DOCKER_REGISTRY-}pheasantforms
     build:
       context: .
-      dockerfile: Pheasant.Forms/Dockerfile
+      dockerfile: Services/Pheasant.Forms/Dockerfile

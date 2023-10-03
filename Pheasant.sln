@@ -3,9 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pheasant.Forms", "Pheasant.Forms\Pheasant.Forms.csproj", "{68E68EC1-9532-45E9-9541-FEBC46723644}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pheasant.Forms", "Services\Pheasant.Forms\Pheasant.Forms.csproj", "{68E68EC1-9532-45E9-9541-FEBC46723644}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{AE596B5E-571C-4240-A327-9DBD727E51E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{75CE6E5E-62F7-4A9E-A442-0E18730FE5C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pheasant.Streaming", "Libraries\Pheasant.Streaming\Pheasant.Streaming.csproj", "{2091C7B1-927F-4A13-A801-D0459D0C082A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pheasant.Logging", "Libraries\Pheasant.Logging\Pheasant.Logging.csproj", "{49CFB8ED-1628-4BC8-88CE-10DC7C1C93FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pheasant.Metrics", "Libraries\Pheasant.Metrics\Pheasant.Metrics.csproj", "{D1A3D2B3-A426-45E9-89A7-FDA07F29DF43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pheasant.Utils", "Libraries\Pheasant.Utils\Pheasant.Utils.csproj", "{19BBC0DE-3975-49F8-BCE4-FE4F168177BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{652EDE04-1C9F-464B-B203-051A21B1B2A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +33,32 @@ Global
 		{AE596B5E-571C-4240-A327-9DBD727E51E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE596B5E-571C-4240-A327-9DBD727E51E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE596B5E-571C-4240-A327-9DBD727E51E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2091C7B1-927F-4A13-A801-D0459D0C082A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2091C7B1-927F-4A13-A801-D0459D0C082A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2091C7B1-927F-4A13-A801-D0459D0C082A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2091C7B1-927F-4A13-A801-D0459D0C082A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49CFB8ED-1628-4BC8-88CE-10DC7C1C93FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49CFB8ED-1628-4BC8-88CE-10DC7C1C93FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49CFB8ED-1628-4BC8-88CE-10DC7C1C93FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49CFB8ED-1628-4BC8-88CE-10DC7C1C93FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1A3D2B3-A426-45E9-89A7-FDA07F29DF43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1A3D2B3-A426-45E9-89A7-FDA07F29DF43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1A3D2B3-A426-45E9-89A7-FDA07F29DF43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1A3D2B3-A426-45E9-89A7-FDA07F29DF43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19BBC0DE-3975-49F8-BCE4-FE4F168177BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19BBC0DE-3975-49F8-BCE4-FE4F168177BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19BBC0DE-3975-49F8-BCE4-FE4F168177BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19BBC0DE-3975-49F8-BCE4-FE4F168177BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{68E68EC1-9532-45E9-9541-FEBC46723644} = {652EDE04-1C9F-464B-B203-051A21B1B2A6}
+		{2091C7B1-927F-4A13-A801-D0459D0C082A} = {75CE6E5E-62F7-4A9E-A442-0E18730FE5C3}
+		{49CFB8ED-1628-4BC8-88CE-10DC7C1C93FD} = {75CE6E5E-62F7-4A9E-A442-0E18730FE5C3}
+		{D1A3D2B3-A426-45E9-89A7-FDA07F29DF43} = {75CE6E5E-62F7-4A9E-A442-0E18730FE5C3}
+		{19BBC0DE-3975-49F8-BCE4-FE4F168177BD} = {75CE6E5E-62F7-4A9E-A442-0E18730FE5C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F2DF3E46-5347-4C36-9381-BC116F7FFF3D}
